@@ -30,6 +30,10 @@ The Token Bucket Algorithm is a mechanism used for rate limiting in systems to e
 * Rate Control:
   * Once the bucket is empty, the algorithm allows requests only at the token generation rate.
 
+### Implementation 
+
+[TokenBucket.java](/src/main/java/TokenBucket.java)
+
 ## Leaky Bucket Algorithm 
 
 The Leaky Bucket Algorithm is a rate-limiting algorithm widely used in networking and application programming to control data flow and ensure stability in systems. It’s named for its resemblance to the way a bucket leaks water at a constant rate.
@@ -49,3 +53,6 @@ This mechanism ensures that data is processed at a steady rate, regardless of th
 * Requests are processed (removed) from the bucket at a constant rate.
 * If the bucket overflows (exceeds capacity), excess requests are rejected or dropped.
 
+### Implementation
+
+[LeakyBucket.java](/src/main/java/LeakyBucket.java)
